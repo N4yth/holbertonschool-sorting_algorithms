@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * bubble_sort - function that sort an array
+ * selection_sort - function that sort an array
  * @array: pointeur to array
  * @size: lenght to array
  *
@@ -8,9 +8,10 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t min = 0, tmp = 0, i, j, k;
+	size_t min = 0, i, j, k;
+	int tmp = 0;
 
-	for (i = 0; i < (size - 2); i++)
+	for (i = 0; i < (size - 1); i++)
 	{
 		min = i;
 
